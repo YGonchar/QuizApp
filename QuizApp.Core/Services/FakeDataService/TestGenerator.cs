@@ -19,17 +19,18 @@ namespace QuizApp.DataGenerator
 
         public Test Generate()
         {
+            var id = _testId++;
             return new Test
             {
-                Id = _testId++,
-                Name = _testName + _testId,
+                Id = id,
+                Name = _testName + id,
                 Questions = Enumerable.Range(0, questionsCount)
                     .Select(index =>
                     {
                         var quest = questionsGenerator.Generate();
-                        quest.TestId = _testId;
+                        quest.TestId = id;
                         return quest;
-                    }),
+                    }).ToList(),
             };
         }
     }

@@ -17,17 +17,21 @@ namespace QuizApp.DataGenerator
 
         public Question Generate()
         {
+            var id = _questionId++;
             return new Question
             {
-                Id = _questionId++,
+                Id = id,
+                Title = "question " + id,
+                Type = _questionId % 4 == 0 ? QuestionType.Check : QuestionType.Radio,
                 Options = Enumerable.Range(0, optionsCount)
                     .Select(index =>
                     {
                         var opt = optionsGenerator.Generate();
-                        opt.QuestionId = _questionId;
+                        opt.QuestionId = id;
                         return opt;
-                    }),
+                    }).ToList(),
             };
         }
+
     }
 }

@@ -6,9 +6,6 @@ namespace QuizApp.DataGenerator
     {
         static void Main(string[] args)
         {
-            var testsCount = 5;
-            var randy = new Random
-            IGenerator<Test> testGenerator = new TestGenerator()
         }
     }
 }

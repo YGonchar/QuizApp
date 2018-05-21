@@ -22,14 +22,17 @@ namespace QuizApp.Core.Services
 
         private IEnumerable<Test> MakeFakeData(int testsAmount)
         {
+            var tests = new List<Test>(testsAmount);
             var randy = new Random();
             for (int i = 0; i < testsAmount; i++)
             {
-                yield return new TestGenerator(randy.Next(1, 4)
+                tests.Add(
+                   new TestGenerator(randy.Next(1, 4)
                     , new QuestionsGenerator(randy.Next(3, 6)
                         , new OptionsGenerator()))
-                    .Generate();
+                    .Generate());
             }
+            return tests;
         }
 
         public Task<IEnumerable<Option>> GetOptions(int questionId)

@@ -9,9 +9,10 @@ namespace QuizApp.DataGenerator
 
         public Option Generate()
         {
-            return new Option
+            var id = _optionId++;
+             return new Option
             {
-                Id = _optionId++,
+                Id = id,
                 Value = _optionValue + _optionId,
             };
         }

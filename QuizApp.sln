@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizApp.Droid", "QuizApp.Droid\QuizApp.Droid.csproj", "{4B158E48-ED6E-42EC-8FD5-388E4B0932C7}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizApp.Core", "QuizApp.Core\QuizApp.Core.csproj", "{8B283FEB-2EC8-4D39-BAB3-A972D8492886}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizApp.DataGenerator", "QuizApp.DataGenerator\QuizApp.DataGenerator.csproj", "{19C404E6-69D6-4F8D-8EE1-6DEBCA0544C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizApp.Droid", "QuizApp.Droid\QuizApp.Droid.csproj", "{C521FC32-EC51-4DB8-9257-F0FE73E803AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,12 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4B158E48-ED6E-42EC-8FD5-388E4B0932C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4B158E48-ED6E-42EC-8FD5-388E4B0932C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4B158E48-ED6E-42EC-8FD5-388E4B0932C7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{4B158E48-ED6E-42EC-8FD5-388E4B0932C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4B158E48-ED6E-42EC-8FD5-388E4B0932C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4B158E48-ED6E-42EC-8FD5-388E4B0932C7}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{8B283FEB-2EC8-4D39-BAB3-A972D8492886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8B283FEB-2EC8-4D39-BAB3-A972D8492886}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B283FEB-2EC8-4D39-BAB3-A972D8492886}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,6 +23,12 @@ Global
 		{19C404E6-69D6-4F8D-8EE1-6DEBCA0544C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19C404E6-69D6-4F8D-8EE1-6DEBCA0544C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19C404E6-69D6-4F8D-8EE1-6DEBCA0544C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C521FC32-EC51-4DB8-9257-F0FE73E803AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C521FC32-EC51-4DB8-9257-F0FE73E803AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C521FC32-EC51-4DB8-9257-F0FE73E803AE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C521FC32-EC51-4DB8-9257-F0FE73E803AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C521FC32-EC51-4DB8-9257-F0FE73E803AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C521FC32-EC51-4DB8-9257-F0FE73E803AE}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
