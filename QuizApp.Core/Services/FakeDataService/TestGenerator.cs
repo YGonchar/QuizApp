@@ -9,7 +9,7 @@ namespace QuizApp.DataGenerator
         private readonly IGenerator<Question> questionsGenerator;
 
         private static int _testId;
-        private string _testName = "Test name";
+        private string _testName = "Тест ";
 
         public TestGenerator(int questionsCount, IGenerator<Question> questionsGenerator)
         {

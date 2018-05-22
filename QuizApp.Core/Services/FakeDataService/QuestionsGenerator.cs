@@ -21,7 +21,7 @@ namespace QuizApp.DataGenerator
             return new Question
             {
                 Id = id,
-                Title = "question " + id,
+                Title = "Питання " + id,
                 Type = _questionId % 4 == 0 ? QuestionType.Check : QuestionType.Radio,
                 Options = Enumerable.Range(0, optionsCount)
                     .Select(index =>

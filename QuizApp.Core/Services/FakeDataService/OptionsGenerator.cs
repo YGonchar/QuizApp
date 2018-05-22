@@ -4,7 +4,7 @@ namespace QuizApp.DataGenerator
 {
     public class OptionsGenerator : IGenerator<Option>
     {
-        private string _optionValue = "Option";
+        private string _optionValue = "Варіант ";
         private static int _optionId;
 
         public Option Generate()
